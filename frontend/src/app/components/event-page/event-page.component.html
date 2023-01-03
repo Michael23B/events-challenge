@@ -1,0 +1,7 @@
+<p>event-page works!</p>
+<input type="text" [ngModel]="location"/>
+<input type="date" [ngModel]="dateFrom"/>
+<input type="date" [ngModel]="dateTo"/>
+<div *ngFor="let event of events">
+  <app-event-card [event]="event"></app-event-card>
+</div>

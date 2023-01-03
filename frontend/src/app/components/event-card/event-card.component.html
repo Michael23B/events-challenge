@@ -1,2 +1,9 @@
 <p>event-card works!</p>
-<p>{{event}}</p>
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">{{event.name}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{event.dates.start.localDate}}</h6>
+        <p class="card-text">{{event.info}}</p>
+        <a href="{{event.url}}" class="card-link">See More</a>
+    </div>
+</div>

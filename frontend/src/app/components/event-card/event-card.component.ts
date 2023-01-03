@@ -1,4 +1,5 @@
 import {Component, Input} from '@angular/core';
+import {EventInterface} from "../../shared/interfaces/event.interface";
 
 @Component({
   selector: 'app-event-card',
@@ -6,5 +7,6 @@ import {Component, Input} from '@angular/core';
   styleUrls: ['./event-card.component.scss']
 })
 export class EventCardComponent {
-  @Input() event: any;
+  // @ts-ignore - This is a property that will be passed in from the parent component
+  @Input() public event: EventInterface;
 }

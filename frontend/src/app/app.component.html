@@ -1,5 +1,10 @@
-<div>
-  <!--Header-->
-  <h1>Header component</h1>
+<!-- Header -->
+<nav class="navbar navbar-light bg-light p-2">
+    <a class="navbar-brand" href="https://github.com/Michael23B/events-challenge" target="_blank">
+        <img src="favicon.ico" width="30" height="30" class="d-inline-block align-top" alt="">
+        {{appTitle}}
+    </a>
+</nav>
+<div class="content-body m-auto">
+    <router-outlet></router-outlet>
 </div>
-<router-outlet></router-outlet>

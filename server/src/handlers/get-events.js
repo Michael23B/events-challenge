@@ -62,7 +62,7 @@ const getEvents = async (queryStringParameters) => {
 /**
  * Returns a list of events from the TicketMaster discovery API
  */
-exports.getAllItemsHandler = async (event) => {
+exports.getEventsHandler = async (event) => {
     console.debug('Received event: ', event);
     let response = {};
 
